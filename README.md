@@ -43,7 +43,7 @@ ibu: 60,
 - Allow users to review a beer as well as see recent reviews of beers. 
 - Allow users to search for a beer based on a specific quality (alcohol percentage, bitterness, etc) 
 - Store reviews and ratings in AirTable. 
-- Have three functioning pages that display information. 
+- Have three functioning pages that display information. (A review page, a page to submit reviews, and a suggestion page that allows users to input/search)
 
 #### PostMVP  
 
