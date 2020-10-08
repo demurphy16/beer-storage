@@ -46,10 +46,10 @@ This API will allow users to search for a beer based on a given quality. The sug
 |---|---| ---|
 |Saturday| Core Application Set up (HTML, CSS, etc.)  | 5hr
 |Sunday| Pseudocode / actual code | 3hr
-|Monday| Core React functions/methods/rendering | 5hr
-|Tuesday| CSS :( | 6hr
-|Wednesday| Hit MVP, make sure functions run smoothly and are pulling correct info  | All day
-|Thursday| Post-MVP, advanced CSS and conditionals | All Day
+|Monday| Core React functions/methods/rendering | 8hr
+|Tuesday| CSS and app testing:( | 8hr
+|Wednesday| Hit MVP, make sure functions run smoothly and are pulling correct info  | 8hr
+|Thursday| Post-MVP, advanced CSS and conditionals | 8hr
 |Friday| Presentations | 
 
 
