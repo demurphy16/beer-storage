@@ -27,10 +27,8 @@ Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/u
 ## API and Data Sample
 https://api.punkapi.com/v2/beers
 This API will allow users to search for a beer based on a given quality. The suggestions page will return one, or a few, beers that meet the users specified requirements. 
-  
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
 - Allow users to review a beer as well as see recent reviews of beers. 
 - Allow users to search for a beer based on a specific quality (alcohol percentage, bitterness, etc) 
@@ -38,13 +36,11 @@ This API will allow users to search for a beer based on a given quality. The sug
 - Have three functioning pages that display information. 
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
 - Advanced CSS that allows for easy navigating/showable content 
 - Adding a conditional that changes the color of a div that holds a beer with a high rating vs low rating
 
 ## Time Frames
-
 
 |  Day | Deliverable | Status
 |---|---| ---|
