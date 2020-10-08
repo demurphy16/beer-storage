@@ -28,6 +28,16 @@ Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/u
 https://api.punkapi.com/v2/beers
 This API will allow users to search for a beer based on a given quality. The suggestions page will return one, or a few, beers that meet the users specified requirements. 
 
+#### Code Snippet
+id: 1,
+name: "Buzz",
+tagline: "A Real Bitter Experience.",
+first_brewed: "09/2007",
+description: "A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once.",
+image_url: "https://images.punkapi.com/v2/keg.png",
+abv: 4.5,
+ibu: 60,
+
 #### MVP 
 
 - Allow users to review a beer as well as see recent reviews of beers. 
