@@ -22,7 +22,7 @@ Beer storage wil be designed to offer users access to reviews and suggestions of
   Suggestions:https://www.figma.com/file/PD2ktMNmvzziRf5OhELQ0g/Mobile-Suggestions?node-id=0%3A1
 
 ## Component Hierarchy
-Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
+https://lucid.app/invitations/accept/1f4d5820-ece8-4459-8942-a5140d0c7a28
 
 ## API and Data Sample
 https://api.punkapi.com/v2/beers
