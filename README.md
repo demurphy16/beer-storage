@@ -57,7 +57,7 @@ ibu: 60,
 |Saturday| Core Application Set up (HTML, CSS, etc.)  | 5hr
 |Sunday| Pseudocode / actual code | 3hr
 |Monday| Core React functions/methods/rendering | 8hr
-|Tuesday| CSS and app testing:( | 8hr
+|Tuesday| app testing and CSS :( | 8hr
 |Wednesday| Hit MVP, make sure functions run smoothly and are pulling correct info  | 8hr
 |Thursday| Post-MVP, advanced CSS and conditionals | 8hr
 |Friday| Presentations | 
