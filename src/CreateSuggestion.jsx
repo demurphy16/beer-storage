@@ -20,6 +20,7 @@ class CreateSuggestion extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
+    this.getBeers()
   }
 
   changeInput(event) {
@@ -39,14 +40,11 @@ class CreateSuggestion extends Component {
           />
           <button type="submit">Find Your Beer</button>
         </form>
-        <ul>{beers.name}</ul>
+        <ul>{beers.map((beer, index) => (
+          <li key={index}>{beer.name}</li>
+         ))}</ul>
       </div>
 
-      // <ul>
-      //   {beers.map((beer, index) => (
-      //     <li key={index}>{beer.name}</li>
-      //    ))}
-      // </ul>
     );
   }
 }

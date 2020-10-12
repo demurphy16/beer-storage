@@ -21,17 +21,21 @@ function App() {
       setReviews(response.data.records);
     };
     getBeer();
-  }, []);
+  }, [fetchReviews]);
 
   return (
     <div className="App">
       <nav className="link-nav">
         <Route exact path="/">
-          <HomePage />
+          <HomePage
+          fetchReviews={fetchReviews}
+          setFetchReviews={setFetchReviews}
+          />
         </Route>
       </nav>
       <Route exact path="/reviews">
-        <ReviewPage />
+        <ReviewPage
+        />
       </Route>
       <Route exact path="/suggestions">
         <SuggestionPage />

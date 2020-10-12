@@ -2,19 +2,19 @@ import React, { useState } from "react";
 import axios from "axios";
 
 function CreateReview(props) {
-  const [beerName, setBeerName] = useState("");
-  const [userThoughts, setUserThoughts] = useState("");
-  const [origin, setOrigin] = useState("");
-  const [rating, setRating] = useState("");
+  const [Beer, setBeer] = useState("");
+  const [Review, setReview] = useState("");
+  const [Origin, setOrigin] = useState("");
+  const [Rating, setRating] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const fields = {
-      beerName,
-      userThoughts,
-      origin,
-      rating,
+      Beer,
+      Review,
+      Origin,
+      Rating,
     };
 
     const airTableUrl = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/beerstorage`;
@@ -30,44 +30,44 @@ function CreateReview(props) {
     );
     props.setFetchReviews(!props.fetchReviews);
 
-    setBeerName("");
+    setBeer("");
     setOrigin("");
     setRating("");
-    setUserThoughts("");
+    setReview("");
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="beerName"></label>
+      <label htmlFor="Beer"></label>
       <input
-        name="beerName"
+        name="Beer"
         type="text"
         placeholder="Beer Name"
-        value={beerName}
-        onChange={(e) => setBeerName(e.target.value)}
+        value={Beer}
+        onChange={(e) => setBeer(e.target.value)}
       />
-      <label htmlFor="origin"></label>
+      <label htmlFor="Origin"></label>
       <input
-        name="origin"
+        name="Origin"
         type="text"
         placeholder="Beer Origin"
-        value={origin}
+        value={Origin}
         onChange={(e) => setOrigin(e.target.value)}
       />
-      <label htmlFor="userThoughts"></label>
+      <label htmlFor="Review"></label>
       <input
-        name="userThoughts"
+        name="Review"
         type="text"
         placeholder="Input Thoughts"
-        value={userThoughts}
-        onChange={(e) => setUserThoughts(e.target.value)}
+        value={Review}
+        onChange={(e) => setReview(e.target.value)}
       />
-      <label htmlFor="rating"></label>
+      <label htmlFor="Rating"></label>
       <input
-        name="rating"
+        name="Rating"
         type="text"
         placeholder="Beer Rating out of 5"
-        value={rating}
+        value={Rating}
         onChange={(e) => setRating(e.target.value)}
       />
       <button type="submit">Submit Beer Review</button>
