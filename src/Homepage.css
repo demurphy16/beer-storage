@@ -1,0 +1,36 @@
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: chartreuse;
+  width: 100vw;
+  height: 8vh;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+  margin: 0 2vw;
+}
+
+
+.h1-home {
+  text-align: center;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  max-width:475px;
+  padding: 2vw;
+  margin: 0 auto;
+  margin-top: 3vh;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+form > input {
+  margin-top: 2vh;
+}

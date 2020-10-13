@@ -21,13 +21,13 @@ function DisplayReview(props) {
     getData();
   }, [fetchData]);
   return (
-    <div className="container">
+    <div className="review-container">
       {beerData.map((beerData) => (
-        <div className="loggedData" key={beerData.id}>
-          <p>Beer: {beerData.fields.Beer}</p>
-          <p>Review: {beerData.fields.Review}</p>
-          <p>Rating: {beerData.fields.Rating}</p>
-          <p>Origin: {beerData.fields.Origin}</p>
+        <div className="reviews-shown" key={beerData.id}>
+          <p className="field">{beerData.fields.Beer}</p>
+          <p className="field reviewField">{beerData.fields.Review}</p>
+          <p className="field">{beerData.fields.Rating}</p>
+          <p className="field">{beerData.fields.Origin}</p>
         </div>
       ))}
     </div>

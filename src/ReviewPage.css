@@ -1,0 +1,45 @@
+
+
+.review-h1 {
+  text-align: center;
+}
+
+.reviewpage-h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.label {
+  display: flex;
+  border: 1px solid blue;
+  border-radius: 10px;
+  margin: 2vh 2vw;
+  min-width: 15vw;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1vw;
+}
+
+.reviews-shown {
+  display: flex;
+  justify-content: center;
+
+}
+
+.field {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 2vh 2vw;
+  min-width: 15vw;
+  max-width: 15vw;
+  min-height: 10vh;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1vw;
+}
+
+.reviewfield {
+  max-height: 20vh;
+  line-height: 5vh;
+}

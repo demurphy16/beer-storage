@@ -1,16 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import DisplayReview from './DisplayReview'
+import DisplayReview from "./DisplayReview";
 
 function ReviewPage() {
   return (
     <div>
-      <div className="review-page">
-        <Link to="/reviews">Reviews</Link>
-        <Link to="/">Home</Link>
-        <Link to="/suggestions">Find Your Own</Link>
-      </div>
-      <h1>Reviews</h1>
+      <h1 className="review-h1">Reviews</h1>
+      <section className="reviewpage-h3">
+        <h3 className="label">Beer Name</h3>
+        <h3 className="label">Review</h3>
+        <h3 className="label">Rating</h3>
+        <h3 className="label">Origin</h3>
+      </section>
       <DisplayReview />
     </div>
   );

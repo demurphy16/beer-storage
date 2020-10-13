@@ -1,0 +1,37 @@
+.sug-h1 {
+  text-align: center;
+}
+
+.suggestion-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vh;
+}
+
+.suggestion-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  max-width: 30vw;
+  margin: 2vh 5vw;
+}
+
+.sug-name {
+  max-width: 15vw;
+  min-width: 15vw;
+  max-height: 20vh;
+  min-height: 20vh;
+
+}
+.sug-abv {
+  max-width: 15vw;
+  min-width: 15vw;
+  max-height: 20vh;
+  min-height: 20vh;
+
+}
+
+

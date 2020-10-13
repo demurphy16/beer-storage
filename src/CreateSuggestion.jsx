@@ -7,11 +7,12 @@ class CreateSuggestion extends Component {
     this.state = {
       beers: [],
       abvInput: "",
+      hopsInput: "",
     };
   }
 
   async getBeers() {
-    const beerURL = `https://api.punkapi.com/v2/beers?abv_gt=${this.state.abvInput}`;
+    const beerURL = `https://api.punkapi.com/v2/beers?abv_gt=${this.state.abvInput}&hops=${this.state.hopsInput}`
     const response = await axios.get(beerURL);
     const userBeer = response.data;
     this.setState({ beers: userBeer });
@@ -25,6 +26,9 @@ class CreateSuggestion extends Component {
   changeInput(event) {
     this.setState({ abvInput: parseInt(event.target.value) });
   }
+  changeHops(event) {
+    this.setState({ hopsInput: parseInt(event.target.value) })
+  }
 
   render() {
     const { beers } = this.state;
@@ -35,14 +39,26 @@ class CreateSuggestion extends Component {
           <input
             name="abvInput"
             type="text"
+            placeholder="Min abv"
             onChange={(event) => this.changeInput(event)}
           />
+          <label htmlFor="hopsInput"></label>
+          <input
+            name="hopsInput"
+            type="text"
+            placeholder="Preffered Hops"
+            onChange={(event) => this.changeHops(event)}
+            />
           <button type="submit">Find Your Beer</button>
         </form>
-        <ul>{beers.slice(0, 4).map((beer, index) => (
-          <li key={index}>{beer.name}</li>
+        <div >{beers.slice(0, 4).map((beer, index) => (
+          <div className="suggestion-container"key={index}>
+            <p className="suggestion-p sug-name">{beer.name}</p>
+            <p className="suggestion-p sug-abv">{beer.abv}</p>
+            <p className="suggestion-p sug-dec">{beer.description}</p>
+          </div>
         ))}
-         </ul>
+         </div>
       </div>
 
     );
