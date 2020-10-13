@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import HomePage from './HomePage'
+import HomePage from "./HomePage";
 import ReviewPage from "./ReviewPage";
-import './Homepage.css';
-import './ReviewPage.css'
-import './SuggestionPage.css'
+import "./Homepage.css";
+import "./ReviewPage.css";
+import "./SuggestionPage.css";
 import { Route, Link } from "react-router-dom";
 import SuggestionPage from "./SuggestionPage";
 
@@ -26,29 +26,33 @@ function App() {
   }, [fetchReviews]);
 
   return (
-    <div className="App">
-      <header className="header-nav">
-        <nav className="home-nav">
-          <Link className="link" to="/reviews">Reviews</Link>
-          <Link className="link" to="/">Home</Link>
-          <Link className="link" to="/suggestions">Find Your Own</Link>
-        </nav>
-      </header>
+      <div className="App">
+        <header className="header-nav">
+          <nav className="home-nav">
+            <Link className="link" to="/reviews">
+              Reviews
+            </Link>
+            <Link className="link" to="/">
+              Home
+            </Link>
+            <Link className="link" to="/suggestions">
+              Find Your Own
+            </Link>
+          </nav>
+        </header>
         <Route exact path="/">
           <HomePage
-          fetchReviews={fetchReviews}
-          setFetchReviews={setFetchReviews}
+            fetchReviews={fetchReviews}
+            setFetchReviews={setFetchReviews}
           />
         </Route>
-      <Route exact path="/reviews">
-        <ReviewPage
-        />
-      </Route>
-      <Route exact path="/suggestions">
-        <SuggestionPage />
-      </Route>
-
-    </div>
+        <Route exact path="/reviews">
+          <ReviewPage />
+        </Route>
+        <Route exact path="/suggestions">
+          <SuggestionPage />
+        </Route>
+      </div>
   );
 }
 

@@ -1,10 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import DisplayReview from "./DisplayReview";
 
 function ReviewPage() {
   return (
-    <div>
+    <div className="rev-container">
       <h1 className="review-h1">Reviews</h1>
       <section className="reviewpage-h3">
         <h3 className="label">Beer Name</h3>

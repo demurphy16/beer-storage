@@ -1,10 +1,24 @@
+
+.home-img {
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1567579518027-7a113279f8ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
+  background-position: center;
+  background-size: cover;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  
+}
+
 .header-nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background-color: chartreuse;
+  background-color: rgba(8, 60, 138, 0.25);
   width: 100vw;
-  height: 8vh;
+  height: 6vh;
 }
 
 .link {
@@ -15,22 +29,28 @@
 
 
 .h1-home {
-  text-align: center;
+  margin-left: 15vw;
+  color: aliceblue;
 }
 
 
-form {
+.home-form {
   display: flex;
   flex-direction: column;
-  width: 40vw;
+  justify-content: center;
+  width: 20vw;
+  height: 40vh;
   max-width:475px;
   padding: 2vw;
-  margin: 0 auto;
-  margin-top: 3vh;
-  border: 1px solid black;
   border-radius: 10px;
+  margin-left: 7vw;
+  background-color: rgba(85, 115, 232, 0.2);
 }
 
 form > input {
+  margin: 2vh 0
+}
+
+form > button {
   margin-top: 2vh;
 }

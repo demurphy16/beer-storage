@@ -1,37 +1,56 @@
+.sug-img {
+  background-image: url('https://images.unsplash.com/photo-1463797221720-6b07e6426c24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
 .sug-h1 {
   text-align: center;
+  margin-top: 0%;
+}
+
+.just-form {
+  display: flex;
+  justify-content: center;
+  height: 20vh;
+  margin-bottom: 15vh;
 }
 
 .suggestion-container {
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-top: 3vh;
+  max-height: 10vh;
+}
+
+.sug-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1vw;
+  border-radius: 10px;
+  background-color: rgba(85, 115, 232, 0.2);
+  border: 1px solid black;
+}
+
+.sug-form > input {
+  margin: .5vh
 }
 
 .suggestion-p {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid red;
+  color: aliceblue;
+  font-weight: 700;
   border-radius: 10px;
-  max-width: 30vw;
-  margin: 2vh 5vw;
-}
-
-.sug-name {
-  max-width: 15vw;
-  min-width: 15vw;
-  max-height: 20vh;
-  min-height: 20vh;
-
-}
-.sug-abv {
-  max-width: 15vw;
-  min-width: 15vw;
-  max-height: 20vh;
-  min-height: 20vh;
-
+  margin: 0 4vw;
+  max-width: 10vw;
+  min-width: 10vw;
+  max-height: 10vh;
+  min-height: 10vh;
 }
 
 
