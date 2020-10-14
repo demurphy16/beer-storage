@@ -54,3 +54,15 @@ form > input {
 form > button {
   margin-top: 2vh;
 }
+
+@media only screen and (max-width: 834px) {
+  .home-form {
+    height: 30vh;
+    margin-left: 7vw;
+    background-color: rgba(85, 115, 232, 0.2);
+  }
+  .h1-home {
+    margin-top: 10vh;
+    margin-left: 10vw;
+  }
+}

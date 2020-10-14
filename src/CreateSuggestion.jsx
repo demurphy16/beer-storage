@@ -42,7 +42,7 @@ class CreateSuggestion extends Component {
             <input
               name="abvInput"
               type="text"
-              placeholder="Maximum Alc by Volume"
+              placeholder="Max Alc%"
               onChange={(event) => this.changeInput(event)}
             />
             <label htmlFor="hopsInput"></label>
@@ -55,7 +55,7 @@ class CreateSuggestion extends Component {
             <button type="submit">Find Your Beer</button>
           </form>
         </section>
-        <div>
+        <div className="sug2-container">
           {beers.slice(0, 3).map((beer, index) => (
             <div className="suggestion-container" key={index}>
               <p className="suggestion-p sug-name">{beer.name}</p>

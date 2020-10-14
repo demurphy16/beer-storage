@@ -22,29 +22,17 @@ function DisplayReview(props) {
   }, [fetchData]);
 
   return (
-    <div className="review-container">
-      {beerData.map((beerData) => (
-        <div className="reviews-shown" key={beerData.id}>
-          <p className="field">{beerData.fields.Beer}</p>
-          {/* { if (parseInt.beerData.fields.Rating)} */}
-          <p className="field reviewField">{beerData.fields.Review}</p>
-          <p className="field">{beerData.fields.Rating}</p>
-          <p className="field">{beerData.fields.Origin}</p>
-        </div>
-      ))}
-      <div className="rating">
-        <input type="radio" name="star" id="star1" />
-        <label htmlFor="star1"></label>
-        <input type="radio" name="star" id="star2" />
-        <label htmlFor="star2"></label>
-        <input type="radio" name="star" id="star3" />
-        <label htmlFor="star3"></label>
-        <input type="radio" name="star" id="star4" />
-        <label htmlFor="star4"></label>
-        <input type="radio" name="star" id="star5" />
-        <label htmlFor="star5"></label>
-        <span className="fa fa-star checked"></span>
-      </div>
+    <div>
+      <h1 className="review-h1">Reviews</h1>
+      <section className="rev2-container">
+        {beerData.map((beerData) => (
+          <div className="reviews-shown" key={beerData.id}>
+            <p className="field name-field">{beerData.fields.Beer}, {beerData.fields.Origin}</p>
+            <p className="field review-field">{beerData.fields.Review}</p>
+            <p className="field">{beerData.fields.Rating}</p>
+          </div>
+        ))}
+      </section>
     </div>
   );
 }
