@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-function DisplayReview(props) {
+function DisplayReview() {
   const [beerData, setBeerData] = useState([]);
-  const [fetchData, setFetchData] = useState(false);
   useEffect(() => {
     const getData = async () => {
       const airTableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/beerstorage`;
@@ -19,7 +18,7 @@ function DisplayReview(props) {
       setBeerData(response.data.records);
     };
     getData();
-  }, [fetchData]);
+  }, []);
 
   return (
     <div>
@@ -27,7 +26,9 @@ function DisplayReview(props) {
       <section className="rev2-container">
         {beerData.map((beerData) => (
           <div className="reviews-shown" key={beerData.id}>
-            <p className="field name-field">{beerData.fields.Beer}, {beerData.fields.Origin}</p>
+            <p className="field name-field">
+              {beerData.fields.Beer}, {beerData.fields.Origin}
+            </p>
             <p className="field review-field">{beerData.fields.Review}</p>
             <p className="field">{beerData.fields.Rating}</p>
           </div>

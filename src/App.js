@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React, { useState } from "react";
 import HomePage from "./HomePage";
 import ReviewPage from "./ReviewPage";
 import "./Homepage.css";
@@ -9,26 +8,15 @@ import { Route, Link } from "react-router-dom";
 import SuggestionPage from "./SuggestionPage";
 
 function App() {
-  const [reviews, setReviews] = useState([]);
   const [fetchReviews, setFetchReviews] = useState(false);
-
-  useEffect(() => {
-    const getBeer = async () => {
-      const airTableUrl = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/beerstorage`;
-      const response = await axios.get(airTableUrl, {
-        headers: {
-          Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
-        },
-      });
-      setReviews(response.data.records);
-    };
-    getBeer();
-  }, [fetchReviews]);
 
   return (
     <div className="App">
       <header className="header-nav">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap"
+          rel="stylesheet"
+        ></link>
         <nav className="home-nav">
           <Link className="link" to="/reviews">
             Reviews

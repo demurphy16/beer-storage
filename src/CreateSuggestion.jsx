@@ -38,19 +38,19 @@ class CreateSuggestion extends Component {
       <div>
         <section className="just-form">
           <form className="sug-form" onSubmit={(e) => this.handleSubmit(e)}>
-            <label htmlFor="abvInput"></label>
-            <input
-              name="abvInput"
-              type="text"
-              placeholder="Max Alc%"
-              onChange={(event) => this.changeInput(event)}
-            />
             <label htmlFor="hopsInput"></label>
             <input
               name="hopsInput"
               type="text"
               placeholder="Preferred Hops"
               onChange={(event) => this.changeHops(event)}
+            />
+            <label htmlFor="abvInput"></label>
+            <input
+              name="abvInput"
+              type="text"
+              placeholder="Max Alc%"
+              onChange={(event) => this.changeInput(event)}
             />
             <button type="submit">Find Your Beer</button>
           </form>
@@ -69,10 +69,5 @@ class CreateSuggestion extends Component {
   }
 }
 
-{
-  /* <ul>{beers.map((beer, index) => (
-          <li key={index}>{beer.name}</li>
-         ))}</ul> */
-}
 
 export default CreateSuggestion;

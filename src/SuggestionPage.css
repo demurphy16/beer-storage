@@ -1,5 +1,5 @@
 .sug-img {
-  background-image: url('https://images.unsplash.com/photo-1463797221720-6b07e6426c24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+  background-image: url("https://images.unsplash.com/photo-1463797221720-6b07e6426c24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -16,7 +16,6 @@
   display: flex;
   justify-content: center;
   height: 20vh;
-  margin-bottom: 5vh;
 }
 .sug2-container {
   display: flex;
@@ -44,11 +43,10 @@
   padding: 1vw;
   border-radius: 10px;
   background-color: rgba(225, 225, 225, 0.365);
-
 }
 
 .sug-form > input {
-  margin: .5vh
+  margin: 0.5vh;
 }
 
 .suggestion-p {
@@ -64,21 +62,53 @@
 }
 
 @media only screen and (max-width: 834px) {
-  .sug2-container{
+  .sug2-container {
     margin-top: 15vh;
   }
 
-  .sug-form{
+  .sug-form {
     min-height: 25vh;
     max-width: 17vw;
   }
-  .sug-form > input{
+  .sug-form > input {
     margin: 2vh;
   }
 
   .sug-form > button {
     margin: 2vh;
   }
+  .sug-name {
+    text-align: center;
+  }
+  .sug-tag {
+    text-align: center;
+  }
 }
 
+@media only screen and (max-width: 375px) {
+  .sug-img {
+    background-image: url("https://images.unsplash.com/photo-1542128486-63a7579e52b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  }
 
+  .sug-form {
+    min-width: 30vw;
+  }
+
+  .sug2-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .suggestion-container {
+    min-width: 50vw;
+    max-height: 10vh;
+  }
+  .sug-name {
+    min-width: 40vw;
+    text-align: center;
+  }
+  .sug-tag {
+    min-width: 40vw;
+    text-align: center;
+  }
+}
