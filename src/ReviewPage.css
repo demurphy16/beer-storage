@@ -12,6 +12,7 @@
 .reviewpage-h3 {
   display: flex;
   justify-content: center;
+  
 }
 
 .label {
@@ -47,3 +48,11 @@
   max-height: 20vh;
   line-height: 5vh;
 }
+
+.checked {
+  color: orange;
+}
+
+
+
+

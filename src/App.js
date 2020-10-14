@@ -26,33 +26,34 @@ function App() {
   }, [fetchReviews]);
 
   return (
-      <div className="App">
-        <header className="header-nav">
-          <nav className="home-nav">
-            <Link className="link" to="/reviews">
-              Reviews
-            </Link>
-            <Link className="link" to="/">
-              Home
-            </Link>
-            <Link className="link" to="/suggestions">
-              Find Your Own
-            </Link>
-          </nav>
-        </header>
-        <Route exact path="/">
-          <HomePage
-            fetchReviews={fetchReviews}
-            setFetchReviews={setFetchReviews}
-          />
-        </Route>
-        <Route exact path="/reviews">
-          <ReviewPage />
-        </Route>
-        <Route exact path="/suggestions">
-          <SuggestionPage />
-        </Route>
-      </div>
+    <div className="App">
+      <header className="header-nav">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+        <nav className="home-nav">
+          <Link className="link" to="/reviews">
+            Reviews
+          </Link>
+          <Link className="link" to="/">
+            Home
+          </Link>
+          <Link className="link" to="/suggestions">
+            Find Your Own
+          </Link>
+        </nav>
+      </header>
+      <Route exact path="/">
+        <HomePage
+          fetchReviews={fetchReviews}
+          setFetchReviews={setFetchReviews}
+        />
+      </Route>
+      <Route exact path="/reviews">
+        <ReviewPage />
+      </Route>
+      <Route exact path="/suggestions">
+        <SuggestionPage />
+      </Route>
+    </div>
   );
 }
 

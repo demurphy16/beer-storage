@@ -8,19 +8,21 @@
 .sug-h1 {
   text-align: center;
   margin-top: 0%;
+  padding-top: 3vh;
+  color: beige;
 }
 
 .just-form {
   display: flex;
   justify-content: center;
   height: 20vh;
-  margin-bottom: 15vh;
+  margin-bottom: 5vh;
 }
 
 .suggestion-container {
   display: flex;
   align-items: center;
-  margin-top: 3vh;
+  justify-content: center;
   max-height: 10vh;
 }
 
@@ -30,7 +32,7 @@
   justify-content: center;
   padding: 1vw;
   border-radius: 10px;
-  background-color: rgba(85, 115, 232, 0.2);
+  background-color: rgba(232, 85, 85, 0.2);
   border: 1px solid black;
 }
 
@@ -42,13 +44,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
   color: aliceblue;
   font-weight: 700;
   border-radius: 10px;
-  margin: 0 4vw;
-  max-width: 10vw;
-  min-width: 10vw;
+  max-width: 15vw;
+  min-width: 15vw;
   max-height: 10vh;
   min-height: 10vh;
 }

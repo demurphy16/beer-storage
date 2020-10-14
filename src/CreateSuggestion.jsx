@@ -42,14 +42,14 @@ class CreateSuggestion extends Component {
             <input
               name="abvInput"
               type="text"
-              placeholder="Min abv"
+              placeholder="Maximum Alc by Volume"
               onChange={(event) => this.changeInput(event)}
             />
             <label htmlFor="hopsInput"></label>
             <input
               name="hopsInput"
               type="text"
-              placeholder="Preffered Hops"
+              placeholder="Preferred Hops"
               onChange={(event) => this.changeHops(event)}
             />
             <button type="submit">Find Your Beer</button>
