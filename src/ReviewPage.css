@@ -3,6 +3,7 @@
   margin-top: 0%;
   padding-top: 5vh;
   padding-bottom: 3vh;
+  color: white;
 }
 
 .rev-container {
@@ -10,6 +11,7 @@
   background-size: cover;
   background-position: center;
   height: 100vh;
+  font-family: "Architects Daughter", cursive;
 }
 
 .rev2-container {
@@ -17,7 +19,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  margin-top: 15vh;
   min-height: 70vh;
   max-height: 70vh;
   width: 60vw;

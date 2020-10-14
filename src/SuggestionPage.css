@@ -9,7 +9,7 @@
   text-align: center;
   margin-top: 0%;
   padding-top: 3vh;
-  color: beige;
+  color: rgb(255, 255, 255);
 }
 
 .just-form {
@@ -19,6 +19,7 @@
 }
 .sug2-container {
   display: flex;
+  margin-top: 7vh;
 }
 
 .suggestion-container {
