@@ -35,7 +35,7 @@ class CreateSuggestion extends Component {
   render() {
     const { beers } = this.state;
     return (
-      <div>
+      <div className="img">
         <section className="just-form">
           <form className="sug-form" onSubmit={(e) => this.handleSubmit(e)}>
             <label htmlFor="hopsInput"></label>

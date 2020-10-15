@@ -29,8 +29,8 @@
 }
 
 .h1-home {
-  margin-left: 15vw;
-  color: aliceblue;
+  margin-left: 14vw;
+  color: rgb(155, 173, 213);
 }
 
 .home-form {
@@ -52,6 +52,15 @@ form > input {
 
 form > button {
   margin-top: 2vh;
+}
+
+.home-button {
+  cursor: pointer;
+}
+
+.home-button >img {
+  max-height: 3vh;
+  max-width: 3vw;
 }
 
 @media only screen and (max-width: 834px) {
