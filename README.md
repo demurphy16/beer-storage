@@ -1,9 +1,9 @@
 # Beer-Storage
-
+https://happy-bell-026f8e.netlify.app
    
 ## Project Name
 
-Beer Storage (for now)
+Beer Storage
 
 ## Project Description
 
@@ -26,7 +26,7 @@ https://lucid.app/invitations/accept/1f4d5820-ece8-4459-8942-a5140d0c7a28
 
 ## API and Data Sample
 https://api.punkapi.com/v2/beers
-This API will allow users to search for a beer based on a given quality. The suggestions page will return one, or a few, beers that meet the users specified requirements. 
+This API will allow users to search for a beer based on a given quality. The suggestions page will return three beers that meet the users specified requirements about the type of hops and the maximum alcohol percentage. 
 
 #### Code Snippet
 id: 1,
@@ -44,26 +44,26 @@ ibu: 60,
 #### MVP 
 
 - Allow users to review a beer as well as see recent reviews of beers. 
-- Allow users to search for a beer based on a specific quality (alcohol percentage, bitterness, etc) 
+- Allow users to search for a beer based on a specific quality (alcohol percentage, hops) 
 - Store reviews and ratings in AirTable. 
 - Have three functioning pages that display information. (A review page, a page to submit reviews, and a suggestion page that allows users to input/search)
 
 #### PostMVP  
 
 - Advanced CSS that allows for easy navigating/showable content 
-- Adding a conditional that changes the color of a div that holds a beer with a high rating vs low rating
+- Adding a conditional that changes the color of a div that holds a beer with a high rating vs low rating (unable to complete)
 
 ## Time Frames
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Saturday| Core Application Set up (HTML, CSS, etc.)  | 5hr
-|Sunday| Pseudocode / actual code | 3hr
+|Saturday| Core Application Set up (HTML, CSS, etc.)  | 2hr
+|Sunday| Pseudocode / actual code / continuation / simple desgin | 4hr
 |Monday| Core React functions/methods/rendering | 8hr
-|Tuesday| app testing and CSS :( | 8hr
-|Wednesday| Hit MVP, make sure functions run smoothly and are pulling correct info  | 8hr
-|Thursday| Post-MVP, advanced CSS and conditionals | 8hr
-|Friday| Presentations | 
+|Tuesday| Core React functions/methods/rendering and CSS | 8hr
+|Wednesday| Core React functions/methods/rendering and CSS, Hit MVP  | 8hr
+|Thursday| Continued styling, deployed, tweaked functions, reviewed code | 8hr
+|Friday| Presentations | Total Hours: 42 |
 
 
 
