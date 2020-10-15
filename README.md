@@ -7,7 +7,7 @@ Beer Storage
 
 ## Project Description
 
-Beer storage wil be designed to offer users access to reviews and suggestions of beers they may not have tried. It will also allow users to submit beers that they have tried with a review, rating, and where they found it. 
+Beer storage is designed to offer users access to reviews and suggestions of beers they may not have tried. It will also allow users to submit beers that they have tried with a review, rating, and where they found it. 
 
 ## Wireframes
 
