@@ -24,7 +24,7 @@ function DisplayReview() {
     <div>
       <h1 className="review-h1">Reviews</h1>
       <section className="rev2-container">
-        {beerData.map((beerData) => (
+        {beerData.slice(-4).map((beerData) => (
           <div className="reviews-shown" key={beerData.id}>
             <p className="field name-field">
               {beerData.fields.Beer}, {beerData.fields.Origin}

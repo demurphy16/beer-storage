@@ -1,8 +1,8 @@
 .review-h1 {
   text-align: center;
   margin-top: 0%;
+  margin-bottom: -3%;
   padding-top: 5vh;
-  padding-bottom: 3vh;
   color: white;
 }
 
@@ -34,7 +34,7 @@
   width: 20vw;
   min-height: 30vh;
   max-height: 30vh;
-  margin: 0 5vh;
+  margin: 0 3vw;
   background-color: rgba(225, 225, 225, 0.365);
 }
 

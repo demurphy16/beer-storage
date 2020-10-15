@@ -41,6 +41,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 1vw;
   border-radius: 10px;
   background-color: rgba(225, 225, 225, 0.365);
@@ -48,6 +49,17 @@
 
 .sug-form > input {
   margin: 0.5vh;
+}
+
+.sug-form > button {
+  max-width: 20vw;
+  max-height: 6vh;
+}
+
+.sug-form > button > img{
+  max-height: 5vh;
+  max-width: 10vw;
+  border-radius: 10px;
 }
 
 .suggestion-p {
@@ -71,8 +83,10 @@
     min-height: 25vh;
     max-width: 17vw;
   }
+
   .sug-form > input {
     margin: 2vh;
+    max-width: 15vw;
   }
 
   .sug-form > button {
@@ -93,6 +107,10 @@
 
   .sug-form {
     min-width: 30vw;
+  }
+
+  .sug-form > input {
+    max-width: 25vw;
   }
 
   .sug2-container {
